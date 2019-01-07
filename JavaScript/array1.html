@@ -1,0 +1,49 @@
+
+
+<html>
+    
+<p id="demo"></p>
+<script>
+
+//run//
+
+// var ar= new Array (1,2,3,4);
+// document.getElementById("demo").innerHTML=ar;//print array
+// console.log(ar[0]);
+// // //for(var i:ar.length())
+// // {
+// //     console.log(ar[i]);
+// // }
+
+//run//
+
+// var myStringArray = ["Hello","World"];
+// var arrayLength = myStringArray.length;
+// for (var i = 0; i < arrayLength; i++) {
+//     alert(myStringArray[i]);
+//     //Do something
+// }
+
+//run//
+
+var person = {
+  name : 'Sarah',
+  country : 'US',
+  age : 35,
+  treehouseStudent : true,
+  skills : ['JavaScript', 'HTML', 'CSS']
+};
+
+for (property in person) {
+  //console.log(property, '= ', person[property]);
+    if(property=="age")
+    console.log(person[property]);
+  //console.log(person.name);
+
+   //console.log(property, '= ', JSON.stringify(person[property]));
+}
+
+
+
+</script>
+</html>

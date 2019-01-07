@@ -1,0 +1,5 @@
+package com.tdd.t1;
+
+public interface PrimeInter {
+
+}

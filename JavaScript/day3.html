@@ -1,0 +1,17 @@
+<html>
+
+<script>
+
+var Animal = {
+  type: 'Any', // Default value of properties
+  displayType: function() {  // Method which will display type of Animal
+    console.log(this.type);
+   
+  }
+}
+
+var s=Object.create(Animal);
+
+s.displayType();
+</script>
+</html>

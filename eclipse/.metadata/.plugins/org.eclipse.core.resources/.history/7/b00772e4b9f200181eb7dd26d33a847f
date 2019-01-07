@@ -1,0 +1,5 @@
+package com.tdd.learn5;
+
+public interface PrimeInter {
+
+}

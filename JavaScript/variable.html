@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+        <body>
+    <script>
+        var a=10;
+        
+        console.log('The value of a is ' + a); // The value of a is undefined
+        document.write(a+'&nbsp;'+'&nbsp;'+'<br>');
+        var b="hi";
+        console.log('The value of b is ' + b); // The value of b is undefined
+       
+        // This one may puzzle you until you read 'Variable hoisting' below
+        let c=5;
+        console.log('The value of c is ' + c); // Uncaught ReferenceError: c is not defined
+        document.write(c+'&nbsp;'+'&nbsp;'+'<br>');
+        var x=84;
+        console.log('The value of x is ' + x); // The value of x is undefined
+        input=x;
+if (input === undefined) {
+ document.write("please define input");
+} else {
+  document.write("looks nice ");
+}
+        var u="hello";
+        console.log('The value of y is ' + y); // Uncaught ReferenceError: y is not defined
+        document.write(u);
+        var input;
+       
+     
+    </script>
+    
+
+
+    
+</body>
+</html>

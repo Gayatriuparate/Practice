@@ -1,0 +1,5 @@
+package com.tdd.tddlearn;
+
+public interface PrimeInter {
+
+}

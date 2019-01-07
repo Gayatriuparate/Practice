@@ -1,0 +1,55 @@
+package com.trytdd.l;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class PrimeFindTest {
+	PrimeFind Primeobj;
+
+	@BeforeEach
+	void setUp() throws Exception {
+		Primeobj=new PrimeFind();
+	}
+	List<Integer> aFactors(int...num){
+		List<Integer> pFactor=new ArrayList<>();
+		for(int n:num)
+		
+			pFactor.add(n);
+		
+		return pFactor;
+		
+	}
+	
+
+	@Test
+	void testGetFactor() {
+		assertEquals(null, Primeobj.getFactor(1));
+		
+		//fail("Not yet implemented");
+	}
+	@Test
+	void testGetFactor01() {
+		assertEquals(aFactors(2), Primeobj.getFactor(2));
+		
+		//fail("Not yet implemented");
+	}
+	@Test
+	void testGetFactor02() {
+		assertEquals(aFactors(3), Primeobj.getFactor(3));
+		
+	}
+	@Test
+	void testGetFactor03() {
+		assertEquals(aFactors(2,2), Primeobj.getFactor(4));
+		
+	}
+
+
+	
+
+}

@@ -1,0 +1,42 @@
+package com.tdd.learn5;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class PrimeclassTest {
+	
+	Primeclass primeobj;
+
+	@BeforeEach
+	void setUp() throws Exception {
+		primeobj=new Primeclass();
+	}
+	List<Integer>getFactorlist(int number){
+		return null;
+			//List<Integer>factList=new ArrayList<>();
+			//return null;
+		}
+	
+
+	@Test
+	void testGetFactors() {
+		assertEquals(null, primeobj.getFactors(1));
+	}
+	@Test
+	void testGetFactors01() {
+		assertEquals(getFactorlist(2), primeobj.getFactors(1));
+	}
+	@Test
+	void testGetFactors02() {
+		assertEquals(getFactorlist(2), primeobj.getFactors(2));
+	}
+
+	
+
+}

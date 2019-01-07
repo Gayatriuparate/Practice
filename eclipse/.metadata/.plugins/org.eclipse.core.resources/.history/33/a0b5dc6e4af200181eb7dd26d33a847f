@@ -1,0 +1,6 @@
+package com.tdd.tddlearn;
+
+public interface PrimeInter {
+	List<Integer> getFactors(int number);
+
+}

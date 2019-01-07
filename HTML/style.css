@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import 'style1.css';
+@media (min-width: 600px) {
+    body {
+        background-color: white;
+    }
+}
+@document url("https://www.example.com/") {
+  h1 {
+    color: green;
+  }
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-self:auto ;
+    border-block-end: 10rem black;
+    border-block-start-style: unset;
+
+  }
+h1 {
+ 
+    colour: blue;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+  
+ 
+  .g{
+      display: flex;
+      color:green
+  }
+.b{
+    color:black
+}
+  
+  p, li {
+    text-decoration: underline;
+  }
+  #firstname{
+      background-color: p
+  }

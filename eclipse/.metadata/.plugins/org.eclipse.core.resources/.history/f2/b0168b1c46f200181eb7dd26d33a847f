@@ -1,0 +1,33 @@
+package com.tdd.unit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class PrimeFactorsTest {
+
+	PrimeFactors primeObj;
+	@BeforeEach
+	void setUp() throws Exception {
+	primeObj=new PrimeFactors();
+	}
+	
+	List<Integer> getFactors(int num){
+		List<Integer> factList=new ArrayList<>();
+		return factList;
+	}
+
+	@Test
+	void test() {
+		assertEquals(null, primeObj.getFactors(1));
+	}
+	@Test
+	void test1() {
+		assertEquals(null, primeObj.getFactors(1));
+	}
+
+}

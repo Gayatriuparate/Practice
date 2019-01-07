@@ -1,0 +1,5 @@
+package com.tdd.learn8;
+
+public interface PrimeFind {
+
+}

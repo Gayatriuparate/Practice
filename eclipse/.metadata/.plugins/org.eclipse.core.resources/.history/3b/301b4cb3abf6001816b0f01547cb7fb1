@@ -1,0 +1,6 @@
+package com.tdd.today;
+
+public interface PrimeInter {
+	List<Integer> getFactor(int num);
+
+}

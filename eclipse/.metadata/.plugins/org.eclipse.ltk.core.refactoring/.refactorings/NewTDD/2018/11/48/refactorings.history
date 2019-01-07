@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;PrimeFindTest.java&apos; to &apos;NewTDD/TestTdd&apos;&#x0A;- Original project: &apos;NewTDD&apos;&#x0A;- Destination element: &apos;NewTDD/TestTdd&apos;&#x0A;- Original element: &apos;com.tdd.tddlearn.PrimeFindTest.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/TestTdd" element1="/src&lt;com.tdd.tddlearn{PrimeFindTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1543326679851" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <img id="myImage1" />
+    <div>
+        <label>Load another</label>
+        <div>
+            <!-- <button>yes</button>
+         <button>no</button> -->
+            <button id="button" onclick="func2()">Next
+            </button>
+        </div>
+    </div>
+    <img id="myImage2" />
+    <script>
+        let abc = function () {
+            return new Promise(function (success, failure) {
+                let imgTag1 = document.getElementById("myImage1");
+                imgTag1.onload = () => {
+                    console.log("First Image Loaded");
+                    success();
+                }
+                imgTag1.src = "https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png";
+                // imgTag1.style.display="true";
+                // success();
+            });
+        }
+
+        let func2 = function () {
+            document.getElementById('button').onclick = function () {
+                var x;
+                if (confirm("second image loading....")) {
+                    x = "ok";
+                    func3();
+                } else {
+                    x = "cancle";
+                    window.close();
+                }
+                console.log("func2")
+
+                //return new Promise(function(success,failure)
+                //{
+                //setTimeout(() => {
+                // var status=prompt("Enter Yes/No");
+                // if(status==='Yes')
+                // {
+
+                // }
+                // }, 1000);
+
+                //});
+         
+         function func3 () {
+            console.log("func3")
+            if (x == "ok") {
+                let imgTag2 = document.getElementById("myImage2");
+                imgTag2.src = "https://www.computerhope.com/cdn/computer-hope.jpg";
+            }
+            else {
+                window.close();
+            }
+        }
+    }
+ }
+
+        let prom1 = abc;
+        prom1().then(() => func2());
+
+    </script>
+</body>
+
+</html>

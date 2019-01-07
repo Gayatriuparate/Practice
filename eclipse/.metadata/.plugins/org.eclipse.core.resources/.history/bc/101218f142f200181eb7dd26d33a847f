@@ -1,0 +1,13 @@
+package com.tdd.learn8;
+
+import java.util.List;
+
+public class PrimeFactor implements PrimeFind {
+
+	@Override
+	public List<Integer> getFactors(int number) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

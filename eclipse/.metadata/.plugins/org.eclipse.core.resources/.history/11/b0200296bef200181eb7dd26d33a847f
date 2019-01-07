@@ -1,0 +1,14 @@
+package com.tdd.learn5;
+
+import java.util.List;
+
+public class Primeclass implements PrimeInter {
+
+	@Override
+	public List<Integer> getFactors(int num) {
+		// TODO Auto-generated method stub
+		if(num==1)	
+			return null;	
+	}
+
+}

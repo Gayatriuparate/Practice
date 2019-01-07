@@ -1,0 +1,6 @@
+package com.trytdd.l;
+
+public interface PrimeInter {
+
+	List<Integer> new getFactor(int num);
+}

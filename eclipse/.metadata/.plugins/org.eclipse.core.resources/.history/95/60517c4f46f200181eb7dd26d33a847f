@@ -1,0 +1,16 @@
+package com.tdd.unit;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrimeFactors implements PrimeInterface {
+
+	@Override
+	public List<Integer> getFactors(int num) {
+		List<Integer> factorList=new ArrayList<>();
+		if(num==1)
+			return null;
+		return factorList;
+	}
+
+}

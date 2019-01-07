@@ -1,0 +1,19 @@
+package com.tdd.learn8;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class PrimeFactorTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@Test
+	void testGetFactors() {
+		fail("Not yet implemented");
+	}
+
+}

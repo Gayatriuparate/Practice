@@ -1,0 +1,20 @@
+package com.trytdd.l;
+
+import java.util.List;
+
+public class PrimeFind implements PrimeInter {
+
+	@Override
+	public List<Integer> getFactor(int num) {
+		// TODO Auto-generated method stub
+		if(num==1) {
+			return null;
+		}
+		else
+		{
+			pFactor.add(2);
+		}
+		return pFactor;
+	}
+
+}

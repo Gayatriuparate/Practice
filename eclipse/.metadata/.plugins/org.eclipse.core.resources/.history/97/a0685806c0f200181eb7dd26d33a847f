@@ -1,0 +1,30 @@
+package com.tdd.learn5;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Primeclass implements PrimeInter {
+
+	@Override
+	public List<Integer> getFactors(int num) {
+		List<Integer>factlist=new ArrayList<>();
+		{
+			int fact=2;
+		// TODO Auto-generated method stub
+		if(num==1) {
+			return null;
+		}
+	else
+		{
+		if(num%fact=0)
+		{
+			factlist.add(fact);
+		}
+		else {
+			fact++;
+		}
+		}return factlist;
+		
+
+	}
+}}

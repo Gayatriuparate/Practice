@@ -1,0 +1,22 @@
+package com.tdd.t1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PriemFind implements PrimeInter {
+
+	@Override
+	public List<Integer> getFactor(int num) {
+		List<Integer> PFactor = new ArrayList<>();
+		// TODO Auto-generated method stub
+		if(num==1)
+		return null;
+		if(num%2==0)
+		{
+			PFactor.add(2);
+			num=num/2;
+		
+	}return PFactor;
+
+}
+}

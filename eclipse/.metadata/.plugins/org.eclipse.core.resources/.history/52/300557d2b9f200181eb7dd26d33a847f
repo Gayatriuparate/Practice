@@ -1,0 +1,5 @@
+package com.tdd.learn5;
+
+public class Primeclass implements PrimeInter {
+
+}

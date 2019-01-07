@@ -1,0 +1,25 @@
+package com.tdd.today;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrimeFind implements PrimeInter {
+
+	@Override
+	public List<Integer> getFactor(int num) {
+		List<Integer> PFactor = new ArrayList<>();
+		// TODO Auto-generated method stub
+		if(num==1)
+		return null;
+		else
+			while(num/2==0)
+			{
+			PFactor.add(num);
+			num=num/2;
+			}
+		
+			
+		return PFactor;
+	}
+
+}
