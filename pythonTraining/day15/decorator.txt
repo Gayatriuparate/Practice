@@ -1,0 +1,1 @@
+decorator use for change functions. it is kind of function

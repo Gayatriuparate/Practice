@@ -1,0 +1,30 @@
+syntax error               bad practice            good practice
+
+Person Record              PRcrd                    PersonRecord
+DEHAULT-HEIGHT             DEHAULT_Ht 	            DEHAULT_HEIGHT
+class		           Class                    AlgebraCourse
+2totalweight               num2                     total_weight
+
+Write down why each of the entries in the left column will raise a syntax error  if it is used as an identifier.
+
+Entry1
+why syntax error= space not allowed 
+why bad practice= we can use as 'PRcrd' but we can not get exact mening of it so it is bad practice.
+why good practice= it is good practice because we get meaning also and it is in proper syntax
+
+Entry2
+why syntax error= '-' not allowed 
+why bad practice= we can use as 'DEHAULT-ht' but again (what is ht? here) we can not get exact mening of it so it is bad practice.
+why good practice= it is good practice because we get meaning also and it is in proper syntax.
+
+
+Entry3
+why syntax error= class is a keyword we can not use it as a identifier
+why bad practice= we can use it as 'Class' but if we give it proper name then better.
+why good practice=it is good practice because we get meaning 
+
+Entry4
+why syntax error='2totalweight' it is not allowed because it is start from number
+why bad practice= as 'num2' we can use it but not get exact meaning
+why good practice= using 'total_weight' got what is exact meaning also it is in proper way so it is good practice(eg. !total-weight)
+

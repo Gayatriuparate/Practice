@@ -1,0 +1,14 @@
+step1=start
+step2=define a variable with value(number=1)
+step3= define another number with value(number=2)
+step4=perform addition
+step5=store result
+step6=display result
+step7=exit
+
+
+function and method
+function is always independent
+method bounded with class
+
+

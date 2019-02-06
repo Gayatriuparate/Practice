@@ -1,0 +1,165 @@
+synerzip@ULTP-390:~/Desktop/Practice/pythonTraining$ cd day9
+synerzip@ULTP-390:~/Desktop/Practice/pythonTraining/day9$ python3
+Python 3.6.7 (default, Oct 22 2018, 11:32:17)
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> animals=['cat','dog','goldfish','canary','cat']
+>>> animals
+['cat', 'dog', 'goldfish', 'canary', 'cat']
+>>> type(animals)
+<class 'list'>
+>>> animals_set=set(animals)
+>>> animals_set
+{'canary', 'goldfish', 'dog', 'cat'}
+>>> animals_unique_list=list(animals_set)
+>>> animals
+['cat', 'dog', 'goldfish', 'canary', 'cat']
+>>> animals_unique_list
+['canary', 'goldfish', 'dog', 'cat']
+>>> animals_unique_tuple=tuple(animals_set)
+>>> animals_unique_tuple
+('canary', 'goldfish', 'dog', 'cat')
+>>> marbles
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'marbles' is not defined
+>>> marbles={"red":34,"green":78,"blue":67}
+>>> marbles
+{'red': 34, 'green': 78, 'blue': 67}
+>>> color=list(marbles)
+>>> color
+['red', 'green', 'blue']
+>>> mables_set=set(marbles.items())
+>>> mables_set
+{('red', 34), ('green', 78), ('blue', 67)}
+>>> mables_set=set(marbles.items(values))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'values' is not defined
+>>> mables_set=set(marbles.values)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object is not iterable
+>>> mables_set=set(marbles.values())
+>>> mables_set
+{34, 67, 78}
+>>> dict([1,2,3])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+>>> dict([(1,2),(3,4)])
+{1: 2, 3: 4}
+>>> s="aaaaabbbbbbbb"
+>>> print(len(s))
+13
+>>> type(s)
+<class 'str'>
+>>> type(s[2])
+<class 'str'>
+>>> print(s[2])
+a
+>>> s[2]=G
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'G' is not defined
+>>> s[2]="G"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> print('aaa'in s)
+True
+>>> print('ab'in s)
+True
+>>> print('aba'in s)
+False
+>>> abc_list=list("seihfdskefjc")
+>>> print(abc_list)
+['s', 'e', 'i', 'h', 'f', 'd', 's', 'k', 'e', 'f', 'j', 'c']
+>>> str(abc_list)
+"['s', 'e', 'i', 'h', 'f', 'd', 's', 'k', 'e', 'f', 'j', 'c']"
+>>> print(abc_list)
+['s', 'e', 'i', 'h', 'f', 'd', 's', 'k', 'e', 'f', 'j', 'c']
+>>> dir(str)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> s="".join(abc_list)
+>>> print(s)
+seihfdskefjc
+>>> animals
+['cat', 'dog', 'goldfish', 'canary', 'cat']
+>>> print("",join(animals))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'join' is not defined
+>>> print("".join(animals))
+catdoggoldfishcanarycat
+>>> print(", ".join(animals))
+cat, dog, goldfish, canary, cat
+>>> a=(", ".join(animals))
+>>> print(a)
+cat, dog, goldfish, canary, cat
+>>> list(a)
+['c', 'a', 't', ',', ' ', 'd', 'o', 'g', ',', ' ', 'g', 'o', 'l', 'd', 'f', 'i', 's', 'h', ',', ' ', 'c', 'a', 'n', 'a', 'r', 'y', ',', ' ', 'c', 'a', 't']
+>>> animals.split()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'split'
+>>> a.split()
+['cat,', 'dog,', 'goldfish,', 'canary,', 'cat']
+>>> a.split(",")
+['cat', ' dog', ' goldfish', ' canary', ' cat']
+>>> a.split(", ")
+['cat', 'dog', 'goldfish', 'canary', 'cat']
+>>> a.split(", ",1)
+['cat', 'dog, goldfish, canary, cat']
+>>> a.split(", ",2)
+['cat', 'dog', 'goldfish, canary, cat']
+>>> my_table=[[1,2,3],[4,5,6],[7,8,9],[10,11,12],]
+>>> my_table
+[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
+>>> my_table[0]
+[1, 2, 3]
+>>> my_table[0.1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers or slices, not float
+>>> my_table[[1]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers or slices, not list
+>>> my_table[[1][0]]
+[4, 5, 6]
+>>> my_table[0][0]
+1
+>>> my_table[0][1]
+2
+>>> my_table[[1][1]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> my_table[[0][1]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> my_table[[1][0]]
+[4, 5, 6]
+>>> my_table[[2][0]]
+[7, 8, 9]
+>>> my_table
+[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
+>>> my_matrix[[1,2,3],[4,5,6],[7,8,9]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'my_matrix' is not defined
+>>> my_matrix=[[1,2,3],[4,5,6],[7,8,9]]
+>>> my_matrix
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> dir(my_matrix)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> a=diag(my_matrix)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'diag' is not defined
+>>> diag = [ my_matrix[i][i] for i in range(len(my_matrix)) ]
+>>> diag
+[1, 5, 9]
+>>>

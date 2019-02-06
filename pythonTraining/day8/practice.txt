@@ -1,0 +1,238 @@
+synerzip@ULTP-390:~/Desktop/Practice/pythonTraining$ cd day8
+synerzip@ULTP-390:~/Desktop/Practice/pythonTraining/day8$ python3
+Python 3.6.7 (default, Oct 22 2018, 11:32:17)
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> even_numbers={2,4,6,8,10}
+>>> big_numbers={6,7,8,9,10}
+>>> print(bib_numbers-even_numbers)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'bib_numbers' is not defined
+>>> print(big_numbers-even_numbers)
+{9, 7}
+>>> print(big_numbers|even_numbers)
+{2, 4, 6, 7, 8, 9, 10}
+>>> print(big_numbers^even_numbers)
+{2, 4, 7, 9}
+>>> dir(set)
+['__and__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__iand__', '__init__', '__init_subclass__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__','__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
+>>> big_numbers.difference(even_numbers)
+{9, 7}
+>>> a=big_numbers.difference(even_numbers)
+>>> print a
+  File "<stdin>", line 1
+    print a
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(a)?
+>>> print(a)
+{9, 7}
+>>> a=even_numbers.difference(big_numbers)
+>>> big_numbers.intersection(even_numbers)
+{8, 10, 6}
+>>> big_numbers.issubset(even_numbers)
+False
+>>> big_numbers.add(11)
+>>> big_numbers
+{6, 7, 8, 9, 10, 11}
+>>> big_numbers.discard(11)
+>>> big_numbers
+{6, 7, 8, 9, 10}
+>>> big_numbers.issuperset(even_numbers)
+False
+>>> my_numbers={1,2,3,4,5,6}
+>>> another_set={4,5,6}
+>>> my_numbers.issuperset(another_set)
+True
+>>> my_numbers.issubset(another_set)
+False
+>>> another_set.issubset(my_numbers)
+True
+>>> another_set.add(7)
+>>> anpother_set
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'anpother_set' is not defined
+>>> another_set
+{4, 5, 6, 7}
+>>> my_numbers.add(another_set)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'set'
+>>> my_numbers.update(another_set)
+>>> my_numbers
+{1, 2, 3, 4, 5, 6, 7}
+>>> big_numbers
+{6, 7, 8, 9, 10}
+>>> big_numbers= number.copy()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'number' is not defined
+>>> numbers=big_numbers.copy()
+>>> numbers
+{6, 7, 8, 9, 10}
+>>> numbers.difference(big_numbers)
+set()
+>>> numbers.difference_update(big_numbers)
+>>> numbers
+set()
+>>> big_numbers
+{6, 7, 8, 9, 10}
+>>> big_numbers.remove(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 1
+>>> big_numbers.remove(7)
+>>> big_numbers
+{6, 8, 9, 10}
+>>> big_numbers.discard(6)
+>>> big_numbers
+{8, 9, 10}
+>>> animals={'zebra','cat','lion','fish','dog'}
+>>> animals
+{'zebra', 'fish', 'dog', 'lion', 'cat'}
+>>> sorted(animals)
+['cat', 'dog', 'fish', 'lion', 'zebra']
+>>> set(sorted(animasl))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'animasl' is not defined
+>>> set(sorted(animals))
+{'zebra', 'fish', 'dog', 'lion', 'cat'}
+>>> animals[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object does not support indexing
+>>> a={}
+>>> type(a)
+<class 'dict'>
+>>> b=set()
+>>> type(b)
+<class 'set'>
+>>> range
+<class 'range'>
+>>> range(10)
+range(0, 10)
+>>> my_num = range(10)
+>>> type(my_num)
+<class 'range'>
+>>> list(my_num)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(1,11))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list(range(1,11,2))
+[1, 3, 5, 7, 9]
+>>> marbles={"red":34,"green":30,"brown":31,"yellow":29}
+>>> marbles
+{'red': 34, 'green': 30, 'brown': 31, 'yellow': 29}
+>>> dir(dict)
+['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> personal_details={
+... "name":"gayatri",
+... "age":38,}
+>>> personal_details
+{'name': 'gayatri', 'age': 38}
+>>> print(marbles["green"})
+  File "<stdin>", line 1
+    print(marbles["green"})
+                         ^
+SyntaxError: invalid syntax
+>>> print(marbles["green"])
+30
+>>> marbles["red"]+=3
+>>> marbles
+{'red': 37, 'green': 30, 'brown': 31, 'yellow': 29}
+>>> personal_details
+{'name': 'gayatri', 'age': 38}
+>>> marbles["name"]="abs"
+>>> marbles
+{'red': 37, 'green': 30, 'brown': 31, 'yellow': 29, 'name': 'abs'}
+>>> marbles["blue"]=67
+>>> marbles
+{'red': 37, 'green': 30, 'brown': 31, 'yellow': 29, 'name': 'abs', 'blue': 67}
+>>> marbles["green"]=50
+>>> marbles
+{'red': 37, 'green': 50, 'brown': 31, 'yellow': 29, 'name': 'abs', 'blue': 67}
+>>> marbles["green"]=77
+>>> marbles
+{'red': 37, 'green': 77, 'brown': 31, 'yellow': 29, 'name': 'abs', 'blue': 67}
+>>> marbles["green"]=
+  File "<stdin>", line 1
+    marbles["green"]=
+                    ^
+SyntaxError: invalid syntax
+>>> marbles
+{'red': 37, 'green': 77, 'brown': 31, 'yellow': 29, 'name': 'abs', 'blue': 67}
+>>> marbles["green"]
+77
+>>> marbles["green","brown"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: ('green', 'brown')
+>>> marbles("green","brown")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'dict' object is not callable
+>>> type(marbles)
+<class 'dict'>
+>>> dir(marbles)
+['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> marbles.get("orange",0)
+0
+>>> marbles.get("orange")
+>>> marbles("orange")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'dict' object is not callable
+>>> a=marbles.get("orange")
+>>> print a
+  File "<stdin>", line 1
+    print a
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(a)?
+>>> print(a)
+None
+>>> marbles
+{'red': 37, 'green': 77, 'brown': 31, 'yellow': 29, 'name': 'abs', 'blue': 67}
+>>> a=marbles.get("orange",0)
+>>> print(a)
+0
+>>> a=marbles.get("red")
+>>> print(a)
+37
+>>> another_marbles={"orange":34,"blue":30,"puple":31}
+>>> another_marbles
+{'orange': 34, 'blue': 30, 'puple': 31}
+>>> marbles.update(another_marbles)
+>>> marbles
+{'red': 37, 'green': 77, 'brown': 31, 'yellow': 29, 'name': 'abs', 'blue': 30, 'orange': 34, 'puple': 31}
+>>> marbles.key()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'key'
+>>> marbles.keys()
+dict_keys(['red', 'green', 'brown', 'yellow', 'name', 'blue', 'orange', 'puple'])
+>>> marbles.values()
+dict_values([37, 77, 31, 29, 'abs', 30, 34, 31])
+>>> marbles.items()
+dict_items([('red', 37), ('green', 77), ('brown', 31), ('yellow', 29), ('name', 'abs'), ('blue', 30), ('orange', 34), ('puple', 31)])
+>>> puple in marbles
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'puple' is not defined
+>>> purple in marbles
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'purple' is not defined
+>>> puple in marbles
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'puple' is not defined
+>>> print("green"in marbles)
+True
+>>> ..........................................
+  File "<stdin>", line 1
+    ..........................................
+         ^
+SyntaxError: invalid syntax
+>>>

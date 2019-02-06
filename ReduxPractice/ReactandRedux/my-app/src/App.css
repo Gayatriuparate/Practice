@@ -41,6 +41,9 @@
   background-color:rebeccapurple; 
   
 }
+.Myspan{
+  padding: 10px;
+}
 
 @keyframes App-logo-spin {
   from {

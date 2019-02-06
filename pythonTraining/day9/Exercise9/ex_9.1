@@ -1,0 +1,93 @@
+Question 1: Convert a list which contains the number 1,1,2,3 and 3, and convert it to a tuple a.
+Ans:
+>>> a=([1,1,2,3,3])
+>>> print(a)
+[1, 1, 2, 3, 3]
+>>> a=tuple([1,1,2,3,3])
+>>> print(a)
+(1, 1, 2, 3, 3)
+>>>
+
+
+Question2:Convert a to a list b. Print its length.
+>>> b=list(a)
+>>> print(b)
+[1, 1, 2, 3, 3]
+>>> type(b)
+<class 'list'>
+
+Question3:Convert b to a set c. Print its length.
+>>> c=set(b)
+>>> print(c)
+{1, 2, 3}
+>>> type(c)
+<class 'set'>
+>>> print(len(c))
+3
+>>>
+
+Question4:Convert c to a list d. Print its length.
+>>> d=list(c)
+>>> print(d)
+[1, 2, 3]
+>>> type(d)
+<class 'list'>
+>>> print(len(d))
+3
+
+Question5:Create a range which starts at 1 and ends at 10. Convert it to a list e.
+>>> r1=range(10)
+>>> print(r1)
+range(0, 10)
+>>> e=list(r1)
+>>> print(e)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>>
+
+Question6:Create the directory dict from the previous example. Create a list t which contains all the key-value pairs from the dictionary as tuples.
+>>> dict={"id":1,"name":"gayatri","phone":8971113509}
+>>> print(dict)
+{'id': 1, 'name': 'gayatri', 'phone': 8971113509}
+>>> print(dict.keys())
+dict_keys(['id', 'name', 'phone'])
+>>> print(dict.items())
+dict_items([('id', 1), ('name', 'gayatri'), ('phone', 8971113509)])
+
+
+question7:Create a list v of all the values in the dictionary.
+>>> temp=dict.values()
+>>> print(temp)
+dict_values([1, 'gayatri', 8971113509])
+>>> v=list(temp)
+>>> print(v)
+[1, 'gayatri', 8971113509]
+
+
+Question8:Create a list k of all the keys in he dictionary.
+>>> k=list(dict.keys())
+>>> print(k)
+['id', 'name', 'phone']
+
+
+Question9:Create a string s which contains the word "antidisestablishmentarianism". Use the sorted function on it. What is the output type? Concatenate the letters in the output to a string s2.
+>>> s="antidisestablishmentarianism"
+>>> print(s)
+antidisestablishmentarianism
+>>> sorted(s)
+['a', 'a', 'a', 'a', 'b', 'd', 'e', 'e', 'h', 'i', 'i', 'i', 'i', 'i', 'l', 'm', 'm', 'n', 'n', 'n', 'r', 's', 's', 's', 's', 't', 't', 't']
+>>> type(s)
+<class 'str'>
+>>> s2="".join(s)
+>>> print(s2)
+antidisestablishmentarianism
+>>> s2="".join(sorted(s))
+>>> print(s2)
+aaaabdeehiiiiilmmnnnrssssttt
+
+Question10:Split the string "the quick brown fox jumped over the lazy dog" into a list w of individual words.
+>>> string1="the quick brown fox jumped over the lazy dog"
+>>> print(string1)
+the quick brown fox jumped over the lazy dog
+>>> w=string1.split()
+>>> print(w)
+['the', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog']
