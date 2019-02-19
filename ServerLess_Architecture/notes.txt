@@ -1,0 +1,13 @@
+________________________________________________________________________________________________________________________________________________________
+
+									SERVERLESS
+________________________________________________________________________________________________________________________________________________________
+AWS lambda
+
+chalice - it is command line tool for deployee application
+
+Zappa - for deployee python web application
+claudia- for node application
+
+AWS password
+Q5AL!czpg8Rg_FM
