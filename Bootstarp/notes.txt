@@ -1,0 +1,9 @@
+BOotstarp
+page layout
+responsive page design 
+media quries(added the fix layout of webpage)
+
+bootstarp advantages
+fast to learn
+responsive webpages
+fast to develop
