@@ -1,0 +1,22 @@
+
+*{
+color:red;
+}
+p{
+    color: aqua;
+}
+.mango_desc{
+    background-color: blueviolet;
+}
+.s{
+    font-family: 'Courgette', cursive;
+    color: pink;
+}
+div{
+    font-family: 'Courier New', Courier, monospace;
+}
+div > p{
+    color: green;
+}
+
+

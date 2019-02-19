@@ -1,0 +1,97 @@
+div
+{
+    border-radius: 5px;
+    }
+/* #header
+{
+    position: fixed;
+    z-index: 1;
+    height:40px;
+    width: 98%;
+    background-color: #668284;
+    margin-bottom: 10px
+    } */
+
+.name {
+   position:center;
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;
+    color:rgb(223, 114, 24);
+}
+body{
+    text-align: center;
+}
+p{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    text-justify: center;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Playfair Display', serif;
+  
+}
+.p1{
+
+
+    margin-right: 40%;
+    text-align: left;
+    text-align: start;
+    text-justify: left;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Playfair Display', serif;
+  
+}
+button{
+    background-color: orange;
+    color: white;
+    border-radius: 8px;
+    height: 40;
+    width: 140;
+
+}
+.fixme{
+   
+    margin-left: 30%;
+    margin-right: 30%;
+}
+footer{
+    margin-top: 10%;
+    background-color: orange;
+    height: 120;
+}
+
+
+.girlimg{
+  height: 170;
+  width: 160;
+  border-radius: 50%;
+  margin-top: 20%;
+}
+.girlimg{
+    height: 170;
+    width: 160;
+    margin-top: 10%
+  
+  }
+  .fixit{
+    font-size: 30px;
+    font-family: 'Heebo', sans-serif;
+    color:rgb(223, 114, 24);
+  }
+  .fixit1{
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    color:rgb(223, 114, 24);
+  }
+
+.mydiv{
+    background-color:floralwhite
+}
+.name1 {
+   
+     font-size: 30px;
+     font-family: 'Pacifico', cursive;
+     color:rgb(223, 114, 24);
+ }
+
+
