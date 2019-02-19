@@ -1,0 +1,18 @@
+________________________________________________________________________________________________________________________________________________________
+
+									NOTES
+________________________________________________________________________________________________________________________________________________________
+
+step to start
+1. use selhar bioler plat
+is contains
+	server
+	client
+	express
+	mongus
+	mondo DB
+2.git clone selhar bilerplate 
+3. open with vs and add other dependancies (route)
+4. start client, start server, start mongodat
+5. create user strories for project as a list of 'as a',' I want', 'So that' and dependencies
+
