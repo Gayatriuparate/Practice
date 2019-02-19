@@ -1,0 +1,31 @@
+<%= form_for(@user) do |u| %>
+    <% if @user.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@user.errors.count, "error") %> prohibited this event from being saved:</h2>
+  
+        <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="field">
+      <%= u.label "event ID" %><br>
+      <%= u.select :event_id, options_from_collection_for_select(@events, "id", "title")%>
+    </div>
+  
+    <div class="field">
+      <%= u.label :Firstname %><br>
+      <%= u.text_field :first_name %>
+    </div>
+    <div class="field">
+      <%= u.label :Lastname %><br>
+      <%= u.text_field :last_name %>
+    </div>
+    
+    <div class="actions">
+      <%= u.submit %>
+    </div>
+  <% end %>
+  
